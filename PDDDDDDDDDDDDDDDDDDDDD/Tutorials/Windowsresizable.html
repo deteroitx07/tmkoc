@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resizable Window</title>
+</head>
+<body onresize="myFunction()">
+    <script>
+
+
+function myFunction() {
+
+  var w = window.outerWidth;
+  var h = window.outerHeight;
+  var txt = "Window size: width=" + w + ", height=" + h;
+  document.getElementById("screen").innerHTML = txt;
+}
+
+    </script>
+    
+
+    
+    <p id="screen"></p>
+    
+
+</body>
+</html>

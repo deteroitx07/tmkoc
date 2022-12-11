@@ -1,0 +1,45 @@
+.navbar {
+    width: 80%;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow-y: visible;
+    margin: auto;
+    height: 52px;
+  }
+  
+  .container-fluid ul {
+    float: right !important;
+  }
+  
+  .navbar-nav li a {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+    gap: 15px;
+    margin: 0;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .blue {
+    color: blue;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  .yellow {
+    color: yellow;
+  }
+  

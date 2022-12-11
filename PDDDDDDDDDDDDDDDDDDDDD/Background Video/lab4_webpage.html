@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedio Bg</title>
+</head>
+<body>
+    <video autoplay muted loop id="Video">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="heading1">
+    <h1> Jay Infotech</h1></div>
+    <br><br><br><br>
+    <div class="heading">
+       
+    <h2>Hii Welcome To Jay Infotech
+        <br>Making IT Work For Your Business
+    
+    </h2>
+        <p >Helping You Identify,Implement and Manage Technology </p>
+        We are an Experienced Software Development Company and System Integrator,Offering Business Products and IT Services to improve your Business Performance.
+    
+        
+            <p >Experienced and Dedicated Professionals in 50 Global locations </p>
+            <br>Since 2009
+            <button id="btn" onclick="btnfunction()">Pause</button>
+    </div>
+    <style>
+        #Video{
+        position: relative;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        }
+        h1{
+            position: absolute;
+            color: rgb(231, 224, 17);
+            width: 70%;
+            right:20%;
+            top:30%;
+            height: 50%;
+            padding:40px;
+            font-size: 100px;
+        }
+
+        h3{
+            position: absolute;
+            color: rgb(231, 224, 17);
+            width: 70%;
+            right:20%;
+            top:30%;
+            height: 50%;
+            padding:40px;
+            font-size: 100px;
+        }
+
+        .heading{
+        position: absolute;
+        background: rgba(0, 0, 0, 0.311);
+        color: white;
+        width: 70%;
+        right:20%;
+        top:40%;
+        height: 70%;
+        padding:40px;
+        font-size: 75px;
+        }
+
+        #btn {
+            
+        width: 400px;
+        font-size: 75px;
+        padding: 10px;
+        border: none;
+        background: rgba(0, 0, 0, 0.586);
+        color: white;
+        cursor: pointer;
+       }
+        </style>
+
+        <script>
+            var video = document.getElementById("Video");
+            var btn = document.getElementById("btn");
+
+            function btnfunction()
+            {
+                if(video.paused)
+                {
+                    video.play();
+                    btn.innerHTML="Pause";
+                }
+                else{
+                    video.pause();
+                    btn.innerHTML="Play";
+                }
+            }
+
+        </script>
+
+</body>
+</html>
